@@ -15,10 +15,10 @@ class App extends Component {
                 <h3>Propiedades</h3>
                 <AddProperty />
                 <hr/>
-                <h4>Properties</h4>
+                <h4>Tareas pendientes</h4>
                 <PropertyList />
                 <hr/>
-                <h4>Deprecadas</h4>
+                <h4>Completadas</h4>
                 <DeprecatedList />
                 <hr/>
                 <button className="btn btn-danger" onClick={()=>this.signOut()}>

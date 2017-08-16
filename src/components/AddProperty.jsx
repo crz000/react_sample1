@@ -19,16 +19,18 @@ class AddProperty extends Component {
 
     render(){
         return(
-            <div>
-                <h2>Agregar propiedad</h2>
-                <div className="form-group"> 
-                    <input className="form-control" type="text" 
-                    placeholder="Agregar Propiedad" onChange={event =>this.setState({title: event.target.value})}/>
+            <div className="row">
+                <h2>Tareas</h2>
+                <div className="col-md-8">
+                    <div className="form-group"> 
+                        <input className="form-control" type="text" 
+                        placeholder="Agregar Tarea" onChange={event =>this.setState({title: event.target.value})}/>
+                    </div>
                 </div>
-                <div className="form-group">
-                    <button className="btn btn-success form-control" type="button" 
-                    onClick={ ()=> this.AddProperty()}> Registrate
-                    </button>
+                <div className="col-md-4">
+                        <button className="btn btn-success form-control" type="button" 
+                        onClick={ ()=> this.AddProperty()}> Crear
+                        </button>
                 </div>
             </div>
         )

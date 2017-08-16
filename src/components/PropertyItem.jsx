@@ -14,12 +14,16 @@ class PropertyItem extends Component {
     render() {
         const { email, title} = this.props.property;
         return(
-            <div>
-                <strong>{title}</strong>
-                <span> de <em>{email}</em></span>
-                <button className="btn btn-primary btn-sm" onClick={()=>this.deprecate()}>
-                    Deprecar
-                </button>
+            <div className="row">
+                <div className="col-md-8">
+                    <strong>{title}</strong>
+                    <span> creada por <em>{email}</em></span>
+                </div>
+                <div className="col-md-4">
+                    <button className="btn btn-primary btn-sm" onClick={()=>this.deprecate()}>
+                        Completar
+                    </button>
+                </div>
             </div>
         )
     }

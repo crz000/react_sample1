@@ -25,7 +25,7 @@ class SignUp extends Component {
     render(){
         return (
             <div>
-                <h2>SignUp</h2>
+                <h2>Registro</h2>
                 <div className="form-group"> 
                     <input className="form-control" type="text" 
                     placeholder="email" onChange={event =>this.setState({email: event.target.value})}/>

@@ -32,20 +32,22 @@ class DeprecatedList extends Component {
 
     render(){
         return(
-            <div>
+            <div className="row">
                 {
                     this.props.deprecated.map((dep, index)=>{
                         const { title, email} = dep;
                         return(
-                            <div key={index}>
-                                <strong>{title}</strong> deprecated by <em>{email}</em>
+                            <div key={index} className="col-md-8">
+                                <strong>{title}</strong> completada por <em>{email}</em>
                             </div>
                         )
                     })
                 }
-                <button className="btn btn-primary" onClick={() => this.cleanDeprecated()}>
-                    Clean
-                </button>
+                <div className="col-md-4">
+                    <button className="btn btn-primary" onClick={() => this.cleanDeprecated()}>
+                        Clean
+                    </button>
+                </div>
             </div>
         )
     }
