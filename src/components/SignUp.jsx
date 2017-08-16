@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import { firebaseApp } from '../firebase';
+import { Link } from 'react-router';
 
 class SignUp extends Component {
     constructor(props){
@@ -23,7 +24,7 @@ class SignUp extends Component {
 
     render(){
         return (
-            <div className="form-inline">
+            <div>
                 <h2>SignUp</h2>
                 <div className="form-group"> 
                     <input className="form-control" type="text" 
@@ -34,11 +35,12 @@ class SignUp extends Component {
                     placeholder="password" onChange={event =>this.setState({password: event.target.value})}/>
                 </div>
                 <div className="form-group">
-                    <button className="btn btn-primary" type="button" 
-                    onClick={ ()=> this.signUp()}> Sign Up 
+                    <button className="btn btn-primary form-control" type="button" 
+                    onClick={ ()=> this.signUp()}> Registrate
                     </button>
                 </div>
                 <div>{this.state.error.message}</div>
+                <div><Link to={'/signin'}>Ingresa</Link></div>
             </div>
         )
     }

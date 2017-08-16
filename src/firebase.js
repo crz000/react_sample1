@@ -10,3 +10,5 @@ const config = {
   };
 
   export const firebaseApp = firebase.initializeApp(config);
+  export const propertyRef = firebase.database().ref('properties');
+  export const deprecatedRef = firebase.database().ref('deprecated');

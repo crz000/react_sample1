@@ -1,0 +1,3 @@
+export const SIGNED_IN = 'SIGNED_IN';
+export const SET_PROPERTIES = 'SET_PROPERTIES';
+export const SET_DEPRECATED = 'SET_DEPRECATED';
